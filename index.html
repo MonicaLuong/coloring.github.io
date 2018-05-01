@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Coloring By Monica Luong</title> <!-- Your Name/Website Name Here -->
+    
+    <script type="text/javascript" src="processing.js"></script>
+        <style>
+            div{
+                width: 100%;
+                min-height: 100%;
+            }
+    </style>
+</head> 
+    
+<body>
+    <div>
+    <script type="application/processing">
+    PImage img;
+
+void setup() {
+  size(1600,1042);
+  img = loadImage("lines.jpg");
+  background (img);
+}
+
+void draw() {
+if (keyPressed) {
+    if (key == 'b' || key == 'B') {
+      fill(#BF4F51,150);} //Bittersweet shimmer
+      if (key == 'a' || key == 'A') {
+      fill(#9966CC,150);} //amethyst
+      if (key == 'c' || key == 'C') {
+      fill(#CD5C5C,150);} //chesnut
+      if (key == 'd' || key == 'D') {
+      fill(#1560BD,150);} //denim
+      if (key == 'e' || key == 'E') {
+      fill(#C2B280,150);} //ecru
+      if (key == 'g' || key == 'G') {
+      fill(#8C92AC,150);} //gray-blue
+      if (key == 'f' || key == 'F') {
+      fill(#ff00ff,150);} //Fuchsia, Magenta
+      if (key == 'h' || key == 'H') {
+      fill(#f0fff0,150);} //Honeydew
+      if (key == 'i' || key == 'I') {
+      fill(#4b0082,150);} //indigo
+      if (key == 'j' || key == 'J') {
+      fill(#f8de7e,150);} //Jasmine, Mellow Yellow
+      if (key == 'k' || key == 'K') {
+      fill(#3ab09e,150);} //Keppel
+      if (key == 'l' || key == 'L') {
+      fill(#9457EB,150  );} //Lavender Indigo
+      if (key == 'm' || key == 'M') {
+      fill(#0BDA51,150);} //Malachite
+      if (key == 'n' || key == 'N') {
+      fill(#FADA5E,150);} //Naples yellow
+      if (key == 'o' || key == 'O') {
+      fill(#FF7F00,150);} //Orange
+      if (key == 'p' || key == 'P') {
+      fill(#CC8899,150);} //puce
+      if (key == 'q' || key == 'Q') {
+      fill(#51484f,150);} //Quartz
+      if (key == 'r' || key == 'R') {
+      fill(#E30B5C,150);} //Razzmatazz
+      if (key == 's' || key == 'S') {
+      fill(#FF2400,150);} //Scarlet
+      if (key == 't' || key == 'T') {
+      fill(#008080,150);} //Teal
+      if (key == 'u' || key == 'U') {
+      fill(#fc6c85,150);} //Ultra Red, Wild Watermelon
+      if (key == 'v' || key == 'V') {
+      fill(#FFDFBF,150);} //Very pale orange
+      if (key == 'w' || key == 'W') {
+      fill(#A0E6FF,150);} //Winter Wizard
+      if (key == 'x' || key == 'X') {
+      fill(#eeed09,150);} //Xanthic
+      if (key == 'y' || key == 'Y') {
+      fill(#0f4d92,150);} //Yale Blue
+      if (key == 'z' || key == 'Z') {
+      fill(#EBC2AF,150);} //Zinnwaldite
+      if (key == ' ' || key == ' ') {
+      fill(255,100);}
+  } 
+  
+  else {
+    
+   noFill ();
+    noStroke ();
+  }
+  
+  ellipse(mouseX, mouseY, 10, 10);
+  
+
+textSize(32);
+fill(#9966CC);
+text("Amethyst", 1350, 30); 
+fill(#BF4F51);
+text("Bittersweet shimmer", 1350, 60); 
+fill(#CD5C5C);
+text("Chesnut", 1350, 90); 
+fill(#1560BD);
+text("Denim", 1350, 120); 
+fill(#C2B280);
+text("Ecru", 1350, 150); 
+fill(#ff00ff);
+text("Fuchsia, Magenta", 1350, 180); 
+fill(#8C92AC);
+text("Gray-blue", 1350, 210); 
+fill(#f0fff0);
+text("Honeydew", 1350, 240); 
+fill(#4b0082);
+text("Indigo", 1350, 270); 
+fill(#f8de7e);
+text("Jasmine, Mellow Yellow", 1350, 300); 
+fill(#3ab09e);
+text("Keppel", 1350, 330); 
+fill(#9457EB);
+text("Lavender Indigo", 1350, 360); 
+fill(#0BDA51);
+text("Malachite", 1350, 390); 
+fill(#FADA5E);
+text("Naples yellow", 1350, 420); 
+fill(#FF7F00);
+text("Orange", 1350, 450); 
+fill(#CC8899);
+text("Puce", 1350, 480); 
+fill(#51484f);
+text("Quartz", 1350, 510); 
+fill(#E30B5C);
+text("Razzmatazz", 1350, 540); 
+fill(#FF2400);
+text("Scarlet", 1350, 570); 
+fill(#008080);
+text("Teal", 1350, 600); 
+fill(#fc6c85);
+text("Ultra Red, Wild Watermelon", 1350, 630); 
+fill(#FFDFBF);
+text("Very pale orange", 1350, 660); 
+fill(#A0E6FF);
+text("Winter Wizard", 1350, 690); 
+fill(#eeed09);
+text("Xanthic", 1350, 720); 
+fill(#0f4d92);
+text("Yale Blue", 1350, 750); 
+fill(#EBC2AF);
+text("Zinnwaldite", 1350, 780); 
+fill (0);
+text("SPACE whiteout", 1350, 810); 
+fill(0);
+text("CLICK to restart", 1350, 840); 
+
+
+}
+
+void mousePressed(){
+  background (img);
+}
+    </script>
+        <canvas> </canvas> </div>
+    
+    <body>
+        <footer>
+            <p> &copy; Monica Luong 2018</p>
+        </footer>
+        
+    </body>
+</html>
